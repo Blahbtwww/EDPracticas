@@ -64,27 +64,3 @@ maximo x y z
 esDescendente :: Int -> Int -> Int -> Int -> Bool
 esDescendente x y z w =
   x > y && y > z && z > w
-
-
-{-main :: IO ()
-main = do
-  --1
-  print (distanciaPuntos (2.0, 1.0) (5.0, 5.0))
-  --2
-  print (valorAbsoluto (2.0, 1.0) (5.0, 5.0))
-  --3
-  print (pendiente (2.0, 1.0) (5.0, 5.0))
-  --4
-  print (hipotenusa (2.0, 1.0) (5.0, 5.0))
-  --5
-  print (raices (2.0, 1.0) (5.0, 5.0))
-  --6
-  print (areaTriangulo (2.0, 1.0) (5.0, 5.0))
-  --7
-  print (esBisiesto (2.0, 1.0) (5.0, 5.0))
-  --8
-  print (comparador (2.0, 1.0) (5.0, 5.0))
-  --9
-  print (maximo (2.0, 1.0) (5.0, 5.0))
-  --10
-  print (esDescendente (2.0, 1.0) (5.0, 5.0))-}
