@@ -63,7 +63,7 @@ comparador x y =
     else
       1
 
--- 9. Máximo entre tres números usando if-then-else
+-- 9. Máximo entre tres números.
 maximo :: Int -> Int -> Int -> Int
 maximo x y z =
   if x >= y && x >= z then
