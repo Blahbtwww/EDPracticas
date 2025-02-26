@@ -40,25 +40,39 @@ areaTriangulo x y z =
 
 -- 7. Determinar si un año es bisiesto.
 esBisiesto :: Int -> Bool
-esBisiesto year
-  | (year `mod` 400 == 0) = True
-  | (year `mod` 100 == 0) = False
-  | (year `mod` 4 == 0) = True
-  | otherwise = False
+esBisiesto year =
+  if year `mod` 400 == 0 then
+    True
+  else
+    if year `mod` 100 == 0 then
+      False
+    else
+      if year `mod` 4 == 0 then
+        True
+      else
+        False
 
 -- 8. Función comparador.
 comparador :: Int -> Int -> Int
-comparador x y
-  | x == y = 0
-  | x < y = -1
-  | otherwise = 1
+comparador x y =
+  if x == y then
+    0
+  else
+    if x < y then
+      -1
+    else
+      1
 
--- 9. Máximo entre tres números.
+-- 9. Máximo entre tres números usando if-then-else
 maximo :: Int -> Int -> Int -> Int
-maximo x y z
-  | x >= y && x >= z = x
-  | y >= x && y >= z = y
-  | otherwise = z
+maximo x y z =
+  if x >= y && x >= z then
+    x
+  else
+    if y >= x && y >= z then
+      y
+    else
+      z
 
 -- 10. Verifica si el orden esta de forma descendente.
 esDescendente :: Int -> Int -> Int -> Int -> Bool
